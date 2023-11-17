@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DlibDotNet" Version="19.21.0.20220724" />
+    <PackageReference Include="Emgu.CV" Version="4.5.1.4349" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.5.1.4349" />
+    <PackageReference Include="Face.Detection.API" Version="1.0.0" />
+    <PackageReference Include="Genocs.Integration.CognitiveServices" Version="2.4.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.Face" Version="2.8.0-preview.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="System.Speech" Version="6.0.0" />
+    <PackageReference Include="Uno.UI" Version="4.9.49" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="haarcascade\haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

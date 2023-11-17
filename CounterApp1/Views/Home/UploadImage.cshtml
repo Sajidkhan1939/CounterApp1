@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "UploadImage";
+}
+
+<h1>UploadImage</h1>
+<form asp-action="UploadAndDetectFace" asp-controller="Home" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" />
+    <input type="submit" value="Upload and Detect Face" />
+</form>
+
+<div>
+    <h2>@ViewBag.Message</h2>
+</div>
+

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Generate Voice Message</h2>
+
+@using (Html.BeginForm("Speak", "Home", FormMethod.Post))  
+{
+    <div>
+        <label for="number">Number:</label>
+        <input type="number" name="number" required />
+    </div>
+    <div>
+        <label for="counter">Counter:</label>
+        <input type="number" name="counter" required />
+    </div>
+    <button type="submit">Generate Voice Message</button>
+}
+
+@if (ViewData["VoiceMessage"] != null)
+{
+    <div>
+        <p>@ViewData["VoiceMessage"]</p>
+    </div>
+}
